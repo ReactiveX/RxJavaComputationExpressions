@@ -4,7 +4,7 @@ Computation expressions for [RxJava](https://github.com/ReactiveX/RxJava).
 
 ## Master Build Status
 
-<a href='https://travis-ci.org/ReactiveX/RxJavaComputationExpressions/builds'><img src='https://travis-ci.org/ReactiveX/RxJavaComputationExpressions.svg?branch=0.x'></a>
+<a href='https://travis-ci.org/ReactiveX/RxJavaComputationExpressions/builds'><img src='https://travis-ci.org/ReactiveX/RxJavaComputationExpressions.svg?branch=2.x'></a>
 
 ## Communication
 
