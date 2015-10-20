@@ -1,15 +1,29 @@
 buildscript {
-  repositories { jcenter() }
+  repositories { 
+    jcenter() 
+  }
   dependencies { classpath 'com.netflix.nebula:gradle-rxjava-project-plugin:2.+' }
 }
 
-apply plugin: 'rxjava-project'
+repositories {
+  jcenter()
+  maven {
+    url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
+  }
+}
+
+//apply plugin: 'rxjava-project'
 apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
 
 dependencies {
-    compile 'io.reactivex:rxjava:1.0.+'
-    testCompile 'junit:junit-dep:4.10'
-    testCompile 'org.mockito:mockito-core:1.8.5'
+    compile 'io.reactivex:rxjava:2.0.0-DP0-SNAPSHOT'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'org.mockito:mockito-core:1.10.19'
 }
 
 
